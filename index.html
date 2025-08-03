@@ -158,8 +158,21 @@
   });
   </script>
 
+  <script>
+  // Reset video to firt frame/poster
+  document.querySelectorAll('video').forEach(video => {
+    video.addEventListener('ended', () => {
+      setTimeout(() => {
+        video.currentTime = 0;
+        video.pause(); // force pause to return to poster
+      }, 2000); // 2 seconds
+    });
+  });
+  </script>
+  
 </body>
 </html>
+
 
 
 
