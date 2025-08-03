@@ -16,7 +16,7 @@
     h1 {
       font-size: 2.5rem;
       text-align: center;
-      margin-bottom: 0.0rem;
+      margin-bottom: -0.5rem;
     }
 
     h2 {
@@ -24,7 +24,7 @@
       text-align: center;
       font-weight: normal;
       color: #cccccc;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
 
     h3 {
@@ -142,10 +142,16 @@
     </video>
   </div>
   
-  
+  <script>
+  // Disable right-click on all videos
+  document.querySelectorAll('video').forEach(video => {
+    video.addEventListener('contextmenu', event => event.preventDefault());
+  });
+  </script>
 
 </body>
 </html>
+
 
 
 
