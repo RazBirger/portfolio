@@ -16,7 +16,7 @@
     h1 {
       font-size: 2.5rem;
       text-align: center;
-      margin-bottom: 0.5rem;
+      margin-bottom: -0.5rem;
     }
 
     h2 {
@@ -24,7 +24,7 @@
       text-align: center;
       font-weight: normal;
       color: #cccccc;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
 
     h3 {
@@ -59,6 +59,8 @@
       display: block;
       margin: 0 auto;
       background-color: #111;
+      /* ✨ Faint glow effect */
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.20);
     }
   </style>
 </head>
@@ -134,16 +136,27 @@
   <div class="video-section">
     <div class="video-title">Sapir eXlab</div>
         <div class="video-description">Promotional Video</div>
-    <video controls>
+    <video controls poster="SapirXT.jpg">
       <source src="SapirX.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </div>
   
-  
+  <script>
+  // Disable right-click on all videos
+  document.querySelectorAll('video').forEach(video => {
+    video.addEventListener('contextmenu', event => event.preventDefault());
+  });
+  </script>
 
 </body>
 </html>
+
+
+
+
+
+
 
 
 
