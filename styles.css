@@ -1,6 +1,6 @@
  body {
       margin: 0;
-      padding: 2rem;
+      padding-top: 2rem;
       background-color: #000;
       color: #e6e6e6; /* 90% white */
       font-family: Arial, sans-serif;
@@ -46,7 +46,7 @@
 
     video {
       width: auto;
-      max-width: calc(100vw * 2 / 3);
+      max-width: calc(100vw * 1 / 2);
       max-height: calc(100vh * 2 / 3);
       height: auto;
       display: block;
@@ -56,9 +56,10 @@
       box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
     }
 	
-	@media (orientation: portrait) {
-	  video {
+
+    /@media (orientation: portrait) {
+      video {
         max-width: 90vw;
         max-height: 90vh;
-	  }
-	}
+      }
+    }
