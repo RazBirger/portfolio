@@ -1,0 +1,57 @@
+ body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #000;
+      color: #e6e6e6; /* 90% white */
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: -0.5rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: normal;
+      color: #cccccc;
+      margin-bottom: 4rem;
+    }
+
+    h3 {
+      font-size: 2.0rem;
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+
+    .video-section {
+      /* max-width: 1280px; */
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .video-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .video-description {
+      font-size: 1rem;
+      color: #aaaaaa;
+      margin-bottom: 1rem;
+    }
+
+    video {
+      width: auto;
+      max-width: calc(100vw * 2 / 3);
+      max-height: calc(100vh * 2 / 3);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      background-color: #111;
+      /* ✨ Faint glow effect */
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+    }
