@@ -55,3 +55,10 @@
       /* ✨ Faint glow effect */
       box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
     }
+	
+	@media (orientation: portrait) {
+	  video {
+        max-width: 90vw;
+        max-height: 90vh;
+	  }
+	}
