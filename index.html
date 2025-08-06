@@ -108,7 +108,8 @@
         video.pause();
         video.currentTime = 0;
         video.load(); // ← this brings back the poster
-      }, 2000); // wait 2 seconds
+		video.controls = false;
+      }, 1000); // wait 1 seconds
     });
   });
   </script>
